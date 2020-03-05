@@ -1,0 +1,4 @@
+compile "/**/*.{png,jpg,gif,svg}", :rep => :thumbnail do
+    filter :thumbnailize, :width => 600
+    write item.identifier + "-thumbnail.png"
+end
